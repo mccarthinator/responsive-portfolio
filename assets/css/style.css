@@ -237,3 +237,20 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* media queries for all 3 html pages. */
+
+@media (min-width: 769px) and (max-width: 980px) {
+
+ } 
+
+@media (min-width: 641px) and (max-width: 768px) {
+ 
+ }
+
+@media (max-width: 640px) {
+ .masthead{
+  position: static;
+  }
+ }
+
