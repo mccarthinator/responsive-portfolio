@@ -30,6 +30,7 @@ body {
 footer,
 .push {
   height: 105px;
+  margin-top: 105px;
 }
 
 /* end sticky footer styling */

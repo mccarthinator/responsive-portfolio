@@ -241,16 +241,106 @@ input[type=submit] {
 /* media queries for all 3 html pages. */
 
 @media (min-width: 769px) and (max-width: 980px) {
+    
+    .sidebar{
+    float: left;
+      } 
 
- } 
+        .footer {
+                position: fixed;
+                clear: both;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: #666666;
+                border-top: 10px solid #4AAAA5;
+                height: 55px;
+                text-align: center;
+                font-size: 16px;
+                color: #ffffff;
+                padding-top: 10px;
+            }
+
+      }
 
 @media (min-width: 641px) and (max-width: 768px) {
- 
- }
+     
+     .sidebar{
+    float: left;
+      }
+
+         .footer {
+                position: fixed;
+                clear: both;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: #666666;
+                border-top: 10px solid #4AAAA5;
+                height: 55px;
+                text-align: center;
+                font-size: 16px;
+                color: #ffffff;
+                padding-top: 0;
+            } 
+
+  }
 
 @media (max-width: 640px) {
- .masthead{
-  position: static;
-  }
- }
+    
+    * {
+        box-sizing: border-box;
+        text-align: center;
+        padding: 3px;
+      }
+
+          .body{
+            width: 640px;
+          }
+              .p{
+                text-align: left;
+                float: left;
+                clear: all;
+              }
+
+                  .logo{
+                    float: left;
+                    text-align: center;
+                  }
+
+                    .nav{
+                      clear: all;
+                      width: 640px;
+                    }
+
+                          .masthead{
+                          position: static;
+                          float: left;
+                            }
+
+                              .sidebar{
+                                float: left;
+                              }
+
+                                .main-section{
+                                  float: left;
+                                  text-align: left;
+                                }
+
+                                  .footer {
+                                        position: fixed;
+                                        clear: all;
+                                        right: 0;
+                                        bottom: 0;
+                                        left: 0;
+                                        background: #666666;
+                                        border-top: 10px solid #4AAAA5;
+                                        height: 55px;
+                                        text-align: center;
+                                        font-size: 16px;
+                                        color: #ffffff;
+                                        padding-top: 10px;
+                                    }
+                      }
+      
 
