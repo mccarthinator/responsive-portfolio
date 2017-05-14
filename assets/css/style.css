@@ -13,10 +13,10 @@ body {
 /* general */
 
 .container {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    clear: both;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
 h1,
@@ -53,38 +53,33 @@ h3 {
 /* header */
 
 #masthead {
-    position: relative;
-    z-index: 99;
-    width: 100%;
-    margin: 0 0 30px;
-    overflow: auto;
-    color: #fff;
-    background: #fff;
-    border-bottom: 2px solid #ccc;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
 
 #logo {
-    float: none;
-    height: 90px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    background: #4aaaa5;
-    display: block;
-    width: 100%;
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
 }
 
 nav {
-    float: none;
-    margin-top: 25px;
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
+  float: right;
+  margin-top: 25px;
 }
 
 nav a {
@@ -117,16 +112,17 @@ footer {
 /* sidebar */
 
 .sidebar {
-    width: 100%;
-    padding: 30px;
-    margin-bottom: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
+  float: right;
+  width: 100%;
+  max-width: 100%;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 h3,
 .sidebar h2 {
-  text-align: center;
   padding-bottom: 20px;
   margin-bottom: 15px;
   line-height: 22px;
@@ -151,12 +147,13 @@ h3,
 }
 
 .main-section {
-    width: 95%;
-    padding: 30px;
-    margin: 0 auto;
-    background: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 40px;
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 /* portfolio page */
@@ -244,30 +241,84 @@ input[type=submit] {
 /* media queries for all 3 html pages. */
 
 @media screen and (max-width: 980px) {
-    
-    .sidebar{
-    float: left;
-    } 
+ 
+#logo {
+  float: none;
+  margin-left: 60px;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
 
-        .footer {
-                position: fixed;
-                clear: both;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                background: #666666;
-                border-top: 10px solid #4AAAA5;
-                height: 55px;
-                text-align: center;
-                font-size: 16px;
-                color: #ffffff;
-                padding-top: 10px;
-            }
-
+     nav {
+      float: right;
+      margin-top: 25px;
+      margin-right: 60px;
       }
+
+         .main-section{
+            float: left;
+            text-align: left;
+            margin-top: 10px;
+            margin-left: 60px;
+          }
+
+
+            .sidebar{
+              float: left;
+              margin-left: 60px;
+              margin-bottom: 60px;
+              width: 650px;
+          } 
+
+              footer {
+                padding: 30px 0;
+                clear: both;
+                font-size: 12px;
+                color: #fff;
+                color: #ccc;
+                text-align: center;
+                background: #666;
+                border-top: 8px solid #4aaaa5;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+              }
+
+          }
 
 @media screen (max-width: 768px) and (min-width: 641px) {
  
+#logo {
+  float: none;
+  margin-left: 20px;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+  }
+                      
+  
+  nav {
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+  }
+
+
    .sidebar { 
       text-align: center;
       float: none;
@@ -277,23 +328,22 @@ input[type=submit] {
       text-align: center;
       max-width: 95%;
       margin-bottom: 30px;
+    }
+
+        footer {
+        padding: 30px 0;
+        clear: both;
+        font-size: 12px;
+        color: #fff;
+        color: #ccc;
+        text-align: center;
+        background: #666;
+        border-top: 8px solid #4aaaa5;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
       }
 }
-
-                                    footer {
-                                    padding: 30px 0;
-                                    clear: both;
-                                    font-size: 12px;
-                                    color: #fff;
-                                    color: #ccc;
-                                    text-align: center;
-                                    background: #666;
-                                    border-top: 8px solid #4aaaa5;
-                                    position: fixed;
-                                    width: 100%;
-                                    bottom: 0;
-                                  }
-                      }
 
 
 
@@ -314,28 +364,42 @@ input[type=submit] {
                 clear: all;
               }
 
-                  .logo{
-                    float: left;
-                    text-align: center;
-                  }
+                    #logo {
+                      float: none;
+                      width: 100%;
+                      height: 90px;
+                      font-family: Georgia, Times, "Times New Roman", serif;
+                      font-size: 30px;
+                      font-weight: 700;
+                      line-height: 90px;
+                      color: #fff;
+                      text-align: center;
+                      text-decoration: none;
+                      background: #4aaaa5;
+                      display: block;
 
-                    .nav{
-                      clear: all;
-                      width: 640px;
                     }
+
+                        nav{
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            position: relative;
+                            float: none;
+                        }
 
                           .masthead{
                           position: static;
                           float: left;
                           }
 
-                              .sidebar{
+                              #sidebar{
                                 float: left;
                               }
 
                                 .main-section{
                                   float: left;
                                   text-align: left;
+                                  margin-top: 50px;
                                 }
 
                                   footer {
